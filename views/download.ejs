@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quickShare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../public/main.css">
+</head>
+
+<body class="w-screen h-screen bg-blue-100 flex justify-center items-center">
+    <div class="bg-white p-6 rounded-md flex justify-center items-center flex-col shadow-md">
+        <h1 class="text-[30px] text-slate-900 font-bol mb-4">quickShare</h1>
+        <img class="w-24 h-auto opacity-10" src="https://icon-library.com/images/download-icon-svg/download-icon-svg-27.jpg" alt="download-icon">
+        <p class="text-slate-500 text-sm"><%= data.fileName%></p>
+        <p class="text-slate-500 text-sm">Size: <%= Math.round(data.size/1024)%> kb</p>
+        <a href="<%= data.download %>" class="bg-blue-500 text-white w-full py-2 px-4 rounded-sm mt-2 hover:bg-blue-600 text-center">Download</a>
+    </div>
+</body>
+
+</html>
